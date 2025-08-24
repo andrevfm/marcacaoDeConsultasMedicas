@@ -196,7 +196,7 @@ const AppointmentForm: React.FC<AppointmentFormProps> = ({ onSubmit }) => {
                   onPress={() => setSelectedDoctor(doctor.id)}
                >
                   <DoctorImage source={{ uri: doctor.image }} />
-                  <DoctorInfo>
+                  <DoctorInfo></DoctorInfo>
                      <DoctorName>{doctor.name}</DoctorName>
                      <DoctorSpecialty>
                         {doctor.role === 'doctor' && 'specialty' in doctor 
